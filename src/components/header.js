@@ -16,10 +16,10 @@ export function Header() {
         })
     ]);
 
-    const userIcon = createFontAwesomeIcon(faUser, `${ICON_SIZE} text-gray-900 cursor-pointer group-hover:text-blue-700`);
+    const userIcon = createFontAwesomeIcon(faUser, `${ICON_SIZE.medium} text-gray-900 cursor-pointer group-hover:text-blue-700`);
     const userText = createElement('span', 'text-gray-900 p-2 cursor-pointer group-hover:text-blue-700', 'Sign In');
     const userWrapper = createElementWithChildren('div', 'group flex gap-2 p-2 items-center cursor-pointer', [userIcon, userText]);
-    const cartIcon = createFontAwesomeIcon(faShoppingCart, `${ICON_SIZE} text-gray-900 cursor-pointer hover:text-blue-700`);
+    const cartIcon = createFontAwesomeIcon(faShoppingCart, `${ICON_SIZE.medium} text-gray-900 cursor-pointer hover:text-blue-700`);
     const actionsWrapper = createElementWithChildren('div', 'flex gap-10 items-center font-medium text-lg', [userWrapper, cartIcon]);
 
     const header = createElementWithChildren('header', 'bg-white flex w-7xl h-fit justify-between items-center', [logo, nav, actionsWrapper]);
