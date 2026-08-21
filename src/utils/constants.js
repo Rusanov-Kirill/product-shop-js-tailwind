@@ -10,5 +10,5 @@ export const NAV_LINKS = ['Home', 'Products', 'About', 'Contact'];
 
 export const ASSETS = {
   logo: '/src/assets/images/NovaCartLogo.png',
-  hero_background: '../assets/images/HeroSectionBg.png',
+  hero_background: '/src/assets/images/HeroSectionBg.png',
 };
