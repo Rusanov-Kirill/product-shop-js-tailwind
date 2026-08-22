@@ -30,14 +30,14 @@ export function HeroSection() {
     const heroSectionBanner = createElementWithChildren('div', `relative flex w-7xl bg-cover bg-center min-h-[65vh] rounded-3xl`, [heroContentWrapper, truckWrapper, percentWrapper]);
     heroSectionBanner.style.backgroundImage = `url(${ASSETS.hero_background})`;
 
-    const benefitsWrapper = createElementWithChildren('div', 'flex flex-row w-7xl h-36 gap-6 border-gray-100 border-1 rounded-3xl justify-between items-center px-12 py-6', [
+    const benefitsWrapper = createElementWithChildren('ul', 'flex flex-row w-7xl h-36 gap-6 border-gray-100 border-1 rounded-3xl justify-between items-center px-12 py-6', [
         ...BENEFITS.map(benefit => {
             const benefitIcon = createFontAwesomeIcon(benefit.icon, `${ICON_SIZE.large} text-blue-700 opacity-80`);
             const benefitIconWrapper = createElementWithChildren('div', 'flex items-center justify-center bg-blue-50 rounded-xl w-16 h-16', [benefitIcon]);
             const benefitTitle = createElement('h3', 'text-lg font-bold text-gray-900', benefit.title);
             const benefitDescription = createElement('p', 'text-gray-500', benefit.description);
             const benefitContentWrapper = createElementWithChildren('div', 'flex flex-col', [benefitTitle, benefitDescription]);
-            const benefitWrapper = createElementWithChildren('div', 'flex flex-row gap-4 items-center', [benefitIconWrapper, benefitContentWrapper]);
+            const benefitWrapper = createElementWithChildren('li', 'flex flex-row gap-4 items-center', [benefitIconWrapper, benefitContentWrapper]);
             return benefitWrapper;
         })
     ]);  
