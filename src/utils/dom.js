@@ -9,6 +9,6 @@ export function createElementWithChildren(tag, className = '',children = [], tex
   const element = document.createElement(tag);
   if (className) element.className = className;
   if (text) element.textContent = text;
-  children.forEach(child => element.appendChild(child));
+  children.filter(child => child !== null).forEach(child => element.appendChild(child));
   return element;
 }
