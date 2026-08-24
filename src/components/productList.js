@@ -9,7 +9,7 @@ import { ICON_SIZE } from '../utils/constants.js';
 export function ProductList({ products }, listTitle = 'Products') {
     const productCards = products.map(product => ProductCard({ product }));
 
-    const sectionTitle = createElement('h2', 'text-3xl text-grey-900 font-bold items-center py-2', listTitle);
+    const sectionTitle = createElement('h2', 'text-3xl text-gray-900 font-bold items-center py-2', listTitle);
     const showAllBtn = createElement('button', 'text-md text-blue-700 font-bold  cursor-pointer', 'View All');
     const showAllIcon = createFontAwesomeIcon(faChevronRight, `${ICON_SIZE.small} text-blue-700`);
     const showAllWrapper = createElementWithChildren('div', 'flex flex-row gap-2 items-center  cursor-pointer', [showAllBtn, showAllIcon]);
