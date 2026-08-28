@@ -12,3 +12,11 @@ export function createElementWithChildren(tag, className = '',children = [], tex
   children.filter(child => child !== null).forEach(child => element.appendChild(child));
   return element;
 }
+
+export function addChilds(elem, ...args) {
+  if (!args.length) return elem;
+  
+  for (let arg of args) {
+    elem.appendChild(arg);
+  }
+}
