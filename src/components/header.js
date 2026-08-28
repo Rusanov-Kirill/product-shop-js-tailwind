@@ -25,7 +25,8 @@ export function Header() {
     const userText = createElement('span', 'text-gray-900 cursor-pointer group-hover:text-blue-700', 'Sign In');
     const userWrapper = createElementWithChildren('div', 'hidden group flex gap-2 p-2 items-center cursor-pointer md:flex md:text-sm xl:text-base', [userIcon, userText]);
     const cartIcon = createFontAwesomeIcon(faShoppingCart, `${ICON_SIZE.medium} text-gray-900 cursor-pointer hover:text-blue-700`);
-    const cartBtn = createElementWithChildren('button', 'flex items-center justify-center text-gray-900 p-2', [cartIcon]);
+    const cartBadge = createElement('span', 'absolute flex -top-1 -right-1 bg-blue-700 text-white text-xs rounded-full w-5.5 h-5.5 items-center justify-center', '0');
+    const cartBtn = createElementWithChildren('button', 'relative flex items-center justify-center text-gray-900 p-2', [cartIcon, cartBadge]);
     const actionsWrapper = createElementWithChildren('div', 'flex gap-2 items-center justify-end font-medium text-lg', [loupeBtn, userWrapper, cartBtn]);
 
     const header = createElementWithChildren('header', 'bg-white grid grid-cols-[1fr_3fr_1fr] h-fit px-4 my-4 md:grid-cols-[1fr_1.5fr_1fr] lg:flex lg:w-5xl lg:mx-auto lg:justify-between xl:w-7xl', [menuBtn, logo, nav, actionsWrapper]);
