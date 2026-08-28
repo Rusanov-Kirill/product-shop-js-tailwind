@@ -29,7 +29,7 @@ export function Header() {
     const cartBtn = createElementWithChildren('button', 'relative flex items-center justify-center text-gray-900 p-2', [cartIcon, cartBadge]);
     const actionsWrapper = createElementWithChildren('div', 'flex gap-2 items-center justify-end font-medium text-lg', [loupeBtn, userWrapper, cartBtn]);
 
-    const header = createElementWithChildren('header', 'bg-white grid grid-cols-[1fr_3fr_1fr] h-fit px-4 my-4 md:grid-cols-[1fr_1.5fr_1fr] lg:flex lg:w-5xl lg:mx-auto lg:justify-between xl:w-7xl', [menuBtn, logo, nav, actionsWrapper]);
+    const header = createElementWithChildren('header', 'bg-white grid grid-cols-[1fr_3fr_1fr] h-fit px-4 my-4 md:grid-cols-[1fr_1.5fr_1fr] lg:flex lg:w-5xl lg:mx-auto lg:px-6 lg:justify-between xl:w-7xl', [menuBtn, logo, nav, actionsWrapper]);
 
     return header;
 }   
