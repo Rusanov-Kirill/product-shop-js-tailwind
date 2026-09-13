@@ -1,0 +1,21 @@
+@layer components {
+    .truck-icon {
+        left: clamp(5%, calc(5% + (15% - 5%) * (100vw - 344px) / (767px - 344px)), 15%);
+        bottom: clamp(25%, calc(25% + (30% - 25%) * (100vw - 344px) / (767px - 344px)), 30%);
+    }
+
+    .percent-icon {
+        left: clamp(10%, calc(10% + (20% - 10%) * (100vw - 344px) / (767px - 344px)), 20%);
+        bottom: clamp(50%, calc(50% + (70% - 50%) * (100vw - 344px) / (767px - 344px)), 70%);
+    }
+
+    .truck-icon-desktop {
+        left: clamp(23%, calc(23% + (60% - 23%) * (100vw - 768px) / (1280px - 768px)), 47%);
+        bottom: clamp(30%, calc(30% + (12% - 30%) * (100vw - 768px) / (1280px - 768px)), 30%);
+    }
+
+    .percent-icon-desktop {
+        left: clamp(28%, calc(28% + (60% - 28%) * (100vw - 768px) / (1280px - 768px)), 50%);
+        bottom: clamp(70%, calc(70% + (75% - 70%) * (100vw - 768px) / (1280px - 768px)), 75%);
+    }
+}
