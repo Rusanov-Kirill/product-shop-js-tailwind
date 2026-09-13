@@ -1,8 +1,9 @@
 import { createElement, createElementWithChildren } from "../utils/dom";
+import { ASSETS } from "../utils/constants";
 
 export function SubscribeBanner() {
     const giftImage = createElement('img', 'w-32 aspect-[4/3] object-fit select-none');
-    giftImage.src = 'src/assets/images/GiftImg.png';
+    giftImage.src = ASSETS.subscribe_banner_image;
 
     const bannerTitle = createElement('h3', 'text-lg text-gray-900 font-bold', 'Sign up and get 5% off');
     const bannerSubtitle = createElement('p', 'text-md text-gray-500 font-bold', 'Be the first to get exclusive deals and new products');
