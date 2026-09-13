@@ -11,8 +11,9 @@ export const ICON_SIZE = {
 export const NAV_LINKS = ['Home', 'Products', 'About', 'Contact'];
 
 export const ASSETS = {
-  logo: '/src/assets/images/NovaCartLogo.png',
-  hero_background: '/src/assets/images/HeroSectionBg.png',
+  logo: '/src/assets/images/NovaCartLogo.webp',
+  hero_background_horizontal: '/src/assets/images/HeroSectionBgHorizontal.webp',
+  hero_background_vertical: '/src/assets/images/HeroSectionBgVertical.webp',
 };
 
 export const BENEFITS = [
@@ -37,3 +38,5 @@ export const BENEFITS = [
     icon: faHeadset,
   },
 ];
+
+export const DESKTOP_MQ = '(min-width: 768px)';
